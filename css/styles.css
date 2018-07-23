@@ -1,6 +1,7 @@
 #background{
     background-image: url(../images/coffee-cup-drink-notebook-table-dp-1366x768.jpg);
     background-size: 1365px;
+    background-attachment: fixed
 }
 #logo{
     text-align: center;
@@ -13,3 +14,41 @@
 #who{
     color:darkred
 }
+#first{
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: red;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+  }
+  
+  .container:hover .overlay {
+    width: 100%;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    white-space: nowrap;
+  }
