@@ -1,4 +1,10 @@
 .container {
   background-color: lightgray;
   align-content: center;
+  width: 100%;
+}
+#contform {
+  align-content: center;
+  background-color: lightblue;
+  float: center;
 }
