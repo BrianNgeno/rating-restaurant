@@ -11,3 +11,16 @@
 #subject {
   text-align: center;
 }
+#social {
+  background-color: #DB4437;
+  height: 305px;
+}
+#email {
+  background-color: lightblue;
+  height: 305px;
+}
+#phone {
+  background-color: #DB4437;
+  height: 305px;
+  color: white;
+}
