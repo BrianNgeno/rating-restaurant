@@ -1,21 +1,121 @@
-body {margin:0;}
+body {
+  margin: 0;
+}
 
 .icon-bar {
-    width: 100%;
-    background-color:#ff66cc;
-    overflow: auto;
+  width: 100%;
+  background-color: #ff4000;
+  overflow: auto;
+  margin-bottom: 0;
 }
 
 .icon-bar a {
-    float: left;
-    width: 20%;
-    text-align: center;
-    padding: 12px 0;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 36px;
+  float: left;
+  width: 20%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
 }
 
 .icon-bar a:hover {
-    background-color: #001a14;
+  background-color: #001a14;
+}
+
+.carousel-inner img {
+  width: 100%;
+  height: 100%;
+}
+
+#section {
+  background-image: url(../images/pexels.jpeg);
+  padding-bottom: 35%;
+  background-repeat: no-repeat;
+  margin-top: 0;
+  text-align: center;
+  color: white;
+  background-size: 1450px 800px;
+  margin-top: 0;
+  padding-top: 50px;
+  font-family: 'Nosifer', cursive;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#btn1 {
+  float: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin right: 10px;
+  border-color: white;
+  border-width: 5px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#btn2 {
+  float: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin right: 10px;
+  border-color: white;
+  border-width: 5px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#btn3 {
+  float: left;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin right: 10px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#btn4 {
+  float: right;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin right: 10px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#btn5 {
+  float: right;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin right: 10px;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+#btn1:hover {
+  color: #ff8080;
+}
+
+a {
+  color: white;
 }
