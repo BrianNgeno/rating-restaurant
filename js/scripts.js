@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  $("form").click(function(event) {
+  $("form").submit(function(event) {
     event.preventDefault();
     var firstName =$("input#firstName").val();
     var lastName =$("input#lastName").val();
