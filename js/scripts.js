@@ -6,7 +6,7 @@ $(document).ready(function() {
     var priority =$("input#priority").val();
     var subject =$("input#subject");
     var result = parseInt(number);
-    
+
     });
   });
 });
