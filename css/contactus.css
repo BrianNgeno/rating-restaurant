@@ -7,6 +7,7 @@
   align-content: center;
   background-color: lightblue;
   float: center;
+  color: #5a5600;
 }
 #contain {
   background-color: lightblue;
@@ -19,11 +20,13 @@
   height: 425px;
   color: lightblue;
   width: 100%;
+  font-family: 'Black Ops One', cursive;
 }
 #email {
   background-color: #5a5600;
   height: 425px;
   color: lightblue;
+  font-family: 'Black Ops One', cursive;
 }
 #phone {
   background-color: lightblue;
@@ -34,6 +37,7 @@
   background-position: center;
   background-size: auto;
   text-align: center;
+  font-family: 'Black Ops One', cursive;
 }
 #cont {
   background-color: gray;
@@ -105,4 +109,15 @@
 }
 #chats {
   text-align: center;
+}
+#title {
+  text-align: center;
+  background-color: lightblue;
+  color: #5a5600;
+  height: 50px;
+  margin: 0px;
+  margin-bottom: -20px;
+}
+#filledForm {
+  color: #5a5600;
 }
