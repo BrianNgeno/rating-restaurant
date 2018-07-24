@@ -9,6 +9,7 @@ background: #ebebeb;
 .carousel {
 	margin: 30px auto 60px;
 	padding: 0 80px;
+  text-align: center;
 }
 .carousel .item {
     text-align: center;
