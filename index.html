@@ -72,7 +72,7 @@
       <br>
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-5">
             <h2>creators</h2>
             <p>Rate My Restaurant project has been created by awesome people </p>
             <ul>
@@ -83,6 +83,33 @@
               <li>Chris Ian</li>
             </ul>
           </div>
+          <div class="col-md-7">
+            <div class="w3-container">
+            <div class="w3-content w3-section img-thumbnail" style="max-width: 500px;">
+              <img class="mySlides w3-animate-zoom"    src="images/sam.jpg" width="490" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-right" src="images/nancy.jpg" width="490" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-top"    src="images/oluoch.jpg"width="490" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-left" src="images/chriss.JPG" width="490" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-bottom" src="images/brian.jpg" width="490" height="300"class="img-thumbnail">
+            </div>
+          </div>
+          </div>
+          <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2500);    
+              }
+              </script>
         </div>
       </div>
     </div> 
