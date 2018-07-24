@@ -1,0 +1,11 @@
+#first-heading{
+   text-align: center;
+   color: green;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background: fixed;
+   background-image: url("../images/restaurant.png");
+}
+#image1{
+  text-align:center;
+}
