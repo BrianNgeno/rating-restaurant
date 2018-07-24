@@ -2,9 +2,143 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+      <title>Rate My Restaurant</title>
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Font+Name">
+        <script
+                src="https://code.jquery.com/jquery-3.3.1.min.js"
+                integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+                crossorigin="anonymous"></script>
+        <script src="js/scripts.js"></script>  
+        <link rel="shortcut icon" type="image/png" href="images/logo.png">
+        
   </head>
-  <body>
+  <body id="background">
+    <div id="logo">
+      <img class="w3-animate-left" src="images/logo.png">
+    </div>
+    <div id="about"> 
+      <link href="https://fonts.googleapis.com/css?family=Bungee+Inline" rel="stylesheet"> 
+      <h1 class="w3-animate-right">About us</h1>
+    </div> 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <h2>WHO ARE WE??</h2>
+          <P id="who">Rate My Restaurant is a webpage that deals with rating hotels and restaurant.This idea was born when we saw 
+            that people had struggles when getting good hotels when they visit new and unfamiliar places.For example
+            Take this scenario where you have gone to a new place and there is no resaurant that you know, this is where 
+            this page comes in handy where you can log in your current location and get the restaurants near you and the 
+            ratings meaning that your satisfaction using this webapp is 98%. </P>
+       </div>
+       <div class="col-md-5" id="first">
+         <img src="images/replace.png" width="450" height="100%" class="img-thumbnail">
+         <div class="overlay">
+           <img src="images/overlay 1.jpg" alt="" width="450" height="250" class="img-rounded">
+         </div>
+       </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-5" id="second">
+            <img src="images/second 2.jpg" width="450" height="250" class="img-rounded">
+            <div class="overlay">
+              <img src="images/second.jpg" alt="" width="450" height="250" class="img-rounded">
+            </div>
+        </div>
+        <div class="col-md-7">
+          <h2>WHAT DO WE DO??</h2>
+          <P>Here at Rate My Restaurant normal people log in and rate hotel and restaurants in their location to better the experience 
+             of this hotels.The restaurants will be made better through the comments they receive from the people through the website.
+             The website works through people creating an account which is free and then loging in. After the login the user can search 
+             the hotel or restaurant the visit it. after the visit the user will rate the hotel or restaurant and can also comment About
+             the experience there,which can be service or the food etc. By this they will help others. </P>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5">
+            <h2>creators</h2>
+            <p>Rate My Restaurant project has been created by five, awesome people </p>
+            <ul>
+              <li>Samuel Muiga</li>
+              <li>Samuel Oluoch</li>
+              <li>Nancy Muthinzi</li>
+              <li>Brian Ngeno</li>
+              <li>Chris Ian</li>
+            </ul>
+          </div>
+          <div class="col-md-7">
+            <div class="w3-container">
+            <div class="w3-content w3-section img-thumbnail" style="max-width: 500px;">
+              <img class="mySlides w3-animate-zoom"    src="images/sam.jpg" width="100%" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-right" src="images/nancy.jpg" width="100%" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-top"    src="images/oluoch.jpg"width="100%" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-left" src="images/chriss.JPG" width="100%" height="300" class="img-thumbnail">
+              <img class="mySlides w3-animate-bottom" src="images/brian.jpg" width="100%" height="300"class="img-thumbnail">
+            </div>
+          </div>
+          </div>
+          <script>
+              var myIndex = 0;
+              carousel();
+              
+              function carousel() {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  myIndex++;
+                  if (myIndex > x.length) {myIndex = 1}    
+                  x[myIndex-1].style.display = "block";  
+                  setTimeout(carousel, 2500);    
+              }
+              </script>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <div class="col-md-7">
+         <p>Rate My Restaurant website is an award winning website because of the contribution it has made in the past years
+            in the market, helping people all over Kenya get the right restaurants according to there prefrence. We have won 
+            prestigious Awards like. 
+            <ul>
+                <li>Superior Taste Award</li>
+                <li>British Curry Award</li>
+                <li>International Association of Culinary Professionals</li>
+                <li>James Beard Foundation Award</li>
+                <li>Jane Grigson Award</li>
+                <li>Michelin Star & Rising Star</li>
+                <li>Monde Selection 
+
+            </li>
+            </ul> 
+             </p>
+        </div>
+        <div class="col-md-5">
+
+        </div>
+      </div>
+    </div> 
+  
   </body>
 </html>
