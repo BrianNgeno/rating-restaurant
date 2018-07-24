@@ -1,27 +1,28 @@
 //Business logic
-function ContactForm(First name, Last name) {
-    this.firstName = First name;
-    this.lastName = Last name;
-    this.High = High;
-    this.Moderate = Moderate;
-    this.Low = Low;
+function ContactForm(first, last, priority, subject) {
+    this.firstName = first;
+    this.lastName = last;
+    this.priority = priority;
+  }
 //User interface logic
 $(document).ready(function() {
-  $("form").submit(function(event) {
+  $("form#contactForm").submit(function(event) {
     event.preventDefault();
     var firstName =$("input#firstName").val();
     var lastName =$("input#lastName").val();
+    // var high =$("input#high").val();
+    // var moderate =$("input#moderate").val();
+    // var low =$("input#low").val();
+    var Subject =$("input#subject").val();
     var priority =$("input#priority").val();
-    var subject =$("input#subject");
+    var newContactForm = new ContactForm(firstName, lastName, priority, subject);
+
+    $("p#summary").append("<p><span class='contain'>" + newContactForm.contactForm + "</span></p>");
+
+    $("input#firstName").val("");
+      $("input#lastName").val("");
+      $("input#priority").val("");
+      $("input#subject").val("");
 
     });
   });
-function myFunction () {
-  var formOutPut = document.getElementById("contactForm");
-    var outPut = "";
-    var i;
-    for (i = 0; i < x.length ;i++) {
-        outPut += x.elements[i].value + "<br>";
-    }
-    document.getElementById("summary").innerHTML = outPut;
-}
