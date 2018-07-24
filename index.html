@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+''<!DOCTYPE html>
 <html lang="en" dir="ltr">
 
 <head>
@@ -20,15 +20,46 @@
 </head>
 
 <body>
+  <div class="container fluid">
   <div class="row" id="top">
     <div class="col-md-4">
       <h1>RATE MY RESTAURANT.<h1>
     </div>
-    <div class="col-md-8">
+    <div class="col-md-4">
       <img src="images/logo.png">
     </div>
+    <div class="col-md-4">
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate" action="/action_page.php">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required id="input1">
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button  id="login">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn"id="x">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
   </div>
+  </div>
+
   <div id="myNav" class="overlay">
     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
     <div class="overlay-content">
@@ -76,7 +107,7 @@
     </a>
     </div>
   </div>
-
+</div>
 
 </body>
 
