@@ -19,8 +19,11 @@ $(document).ready(function(){
   $("button#login").click(function(event){
     event.preventDefault();
     var user=$("#input1").val();
-    alert(user+ "YOU ARE LOGGED IN");
+    alert("You are logged in as" +user);
     $("#id01").hide();
-    window.location.reload();
+    // window.location.reload();
+    $("#login").hide();
+    $("#log").append("<li>"+user+"</li>");
+    console.log(user)
     });
 });
