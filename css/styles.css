@@ -2,8 +2,11 @@
   display: block;
       margin-left: auto;
       margin-right: auto;
-      width: 10%;
+      width: 12%;
 }
 #background{
-  background-image: url("../");
+  background-image: url("../images/restaurant-shot.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 500px;
 }
