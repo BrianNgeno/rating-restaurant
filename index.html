@@ -1,10 +1,81 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="js/scripts.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="utf-8">
+  <title>Contact Us</title>
+</head>
+
+<body>
+  <div class="container" id="cont">
+    <div class="row" id="soci">
+      <div class="container" id="contain">
+      <div class="row">
+
+        <div class="col-md-3" id="contform">
+          <h1><strong>Contact Form</strong></h1>
+          <div class="contain">
+            <form id="contactForm" action="/action_page.php">
+              <label for="firstname">First Name</label>
+              <input type="text" id="firstName" name="firstname" placeholder="First name">
+
+              <label for="lastName">Last Name</label>
+              <input type="text" id="lastName" name="lastname" placeholder="Last name">
+
+              <label for="priority">Priority</label>
+              <select id="priority" name="priority">
+              <option id="high" value="High">High</option>
+              <option id="moderate" value="moderate">Moderate</option>
+              <option id="low" value="low">Low</option>
+              </select>
+
+              <label for="subject"><br>Subject</br></label>
+              <textarea id="subject" name="subject" placeholder="Type your message here.." style="height:200px"></textarea>
+
+              <input onclick="showInput();" type="submit" value="Submit">
+
+            </form>
+          </div>
+        </div>
+        <div class="col-md-9" id="filledForm">
+          <h1>Here is the contact form's summary</h1>
+        <p id="summary"></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container" id="social">
+  <div class="row">
+    <div class="col-md-4" id="chats">
+      <br><a href="#" class="fa fa-facebook"></a> Facebook</br>
+      <br><a href="#" class="fa fa-twitter"></a> Twitter</br>
+      <br><a href="#" class="fa fa-google"></a> Google</br>
+
+      <br><a href="#" class="fa fa-instagram"></a> Instagram</br>
+
+      <br><a href="#" class="fa fa-yahoo"></a> Yahoo</br>
+
+
+    </div>
+    <div class="col-md-4" id="phone">
+      <h1>Phone</h1>
+      <h3>0722 000 000</h3>
+    </div>
+    <div class="col-md-4" id="email">
+      <h1>Email</h1>
+      <h3>info@ratemybusiness.com</h3>
+    </div>
+
+  </div>
+</div>
+</body>
+
 </html>

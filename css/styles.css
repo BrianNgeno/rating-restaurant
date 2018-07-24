@@ -1,0 +1,108 @@
+.container {
+  background-color: lightgray;
+  align-content: center;
+  width: 100%;
+}
+#contform {
+  align-content: center;
+  background-color: lightblue;
+  float: center;
+}
+#contain {
+  background-color: lightblue;
+}
+#subject {
+  text-align: left;
+}
+#social {
+  background-color: #5a5600;
+  height: 425px;
+  color: lightblue;
+  width: 100%;
+}
+#email {
+  background-color: #5a5600;
+  height: 425px;
+  color: lightblue;
+}
+#phone {
+  background-color: lightblue;
+  height: 425px;
+  color: #5a5600;
+  background-image: url(../images/phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  text-align: center;
+}
+#cont {
+  background-color: gray;
+  height: 800px;
+  background-image: url(../images/layout.jpg);
+  background-attachment: fixed;
+}
+#soci {
+  margin-top: 200px;
+  padding-top: 0%;
+}
+#contain {
+  width: 50%;
+}
+#filledForm {
+  text-align: center;
+}
+#slide{
+  background-image: url(../images/layout.jpg);
+  padding-bottom: 40%;
+  padding-top: 10%;
+  background-repeat: no-repeat;
+  margin: 0%;
+}
+#white{
+  background-color: white;
+  margin-left: 30%;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+.fa-yahoo {
+  background: #430297;
+  color: white;
+}
+#social {
+  background-color: #5a5600;
+}
+#chats {
+  text-align: center;
+}
