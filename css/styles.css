@@ -40,7 +40,17 @@
 #contain {
   width: 50%;
 }
-/* #slide{
+#filledForm {
+  text-align: center;
+}
+
+
+
+
+
+
+
+#slide{
   background-image: url(../images/layout.jpg);
   padding-bottom: 40%;
   padding-top: 10%;
@@ -95,4 +105,4 @@
 }
 #social {
   background-color: lightblue;
-} */
+}
