@@ -27,6 +27,11 @@
   background-color: lightblue;
   height: 425px;
   color: black;
+  background-image: url(../images/phone.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  text-align: center;
 }
 #cont {
   background-color: gray;

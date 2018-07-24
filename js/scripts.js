@@ -1,3 +1,11 @@
+//Business logic
+function ContactForm(First name, Last name) {
+    this.firstName = First name;
+    this.lastName = Last name;
+    this.High = High;
+    this.Moderate = Moderate;
+    this.Low = Low;
+//User interface logic
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
