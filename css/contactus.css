@@ -29,7 +29,7 @@
   background-color: lightblue;
   height: 425px;
   color: #5a5600;
-  background-image: url(../images/phone.png);
+  background-image: url(../images4/phone.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -38,7 +38,7 @@
 #cont {
   background-color: gray;
   height: 800px;
-  background-image: url(../images/layout.jpg);
+  background-image: url(../images4/layout.jpg);
   background-attachment: fixed;
 }
 #soci {
@@ -52,7 +52,7 @@
   text-align: center;
 }
 #slide{
-  background-image: url(../images/layout.jpg);
+  background-image: url(../images4/layout.jpg);
   padding-bottom: 40%;
   padding-top: 10%;
   background-repeat: no-repeat;
