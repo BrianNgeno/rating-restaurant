@@ -32,6 +32,7 @@
   background-color: gray;
   height: 800px;
   background-image: url(../images/layout.jpg);
+  background-attachment: fixed;
 }
 #soci {
   margin-top: 200px;
@@ -104,5 +105,8 @@
   color: white;
 }
 #social {
-  background-color: lightblue;
+  background-color: #5a5600;
+}
+#chats {
+  text-align: center;
 }
