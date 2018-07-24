@@ -17,16 +17,18 @@
 #social {
   background-color: #5a5600;
   height: 425px;
-  color: white;
+  color: lightblue;
+  width: 100%;
 }
 #email {
   background-color: #5a5600;
   height: 425px;
+  color: lightblue;
 }
 #phone {
   background-color: lightblue;
   height: 425px;
-  color: black;
+  color: #5a5600;
   background-image: url(../images/phone.png);
   background-repeat: no-repeat;
   background-position: center;
@@ -49,13 +51,6 @@
 #filledForm {
   text-align: center;
 }
-
-
-
-
-
-
-
 #slide{
   background-image: url(../images/layout.jpg);
   padding-bottom: 40%;
@@ -96,14 +91,10 @@
   color: white;
 }
 
-
-
 .fa-instagram {
   background: #125688;
   color: white;
 }
-
-
 
 .fa-yahoo {
   background: #430297;
