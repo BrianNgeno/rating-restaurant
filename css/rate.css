@@ -1,0 +1,20 @@
+#logoimage{
+  display: block;
+      margin-left: auto;
+      margin-right: auto;
+}
+#background{
+  background-image: url("../images5/new.jpg");
+  background-repeat: no-repeat;
+  min-height: 500px;
+}
+.cc{
+  text-align: center;
+}
+#white{
+  background-color: white;
+}
+.rating > span:hover:before {
+   content: "\2605";
+   position: absolute;
+}
