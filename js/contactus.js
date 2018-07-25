@@ -1,9 +1,19 @@
+function openNav() {
+   document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+   document.getElementById("myNav").style.width = "0%";
+}
+
 //Business logic
 function ContactForm(first, last, priority, subject) {
     this.firstName = first;
     this.lastName = last;
     this.priority = priority;
   }
+
+
 //User interface logic
 $(document).ready(function() {
   $("form#contactForm").submit(function(event) {
