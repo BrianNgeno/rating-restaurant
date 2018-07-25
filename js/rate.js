@@ -12,7 +12,6 @@ $(function() {
           // showSelectedRating:false
          });
       });
-<<<<<<< HEAD
 
       $(function() {
           $('#example').barrating({
@@ -21,5 +20,3 @@ $(function() {
            // showSelectedRating:false
           });
        });
-=======
->>>>>>> chris
