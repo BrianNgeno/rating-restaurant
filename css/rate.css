@@ -74,3 +74,11 @@ body {
    right: 35px;
  }
 }
+#comments {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+#come{
+  color: white;
+}
