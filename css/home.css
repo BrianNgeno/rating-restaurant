@@ -7,6 +7,7 @@
   font-family: 'Nosifer', cursive;
 }
 
+<<<<<<< HEAD
 #btn1 {
   padding-bottom: 10px;
   padding-top: 10px;
@@ -71,6 +72,8 @@
   overflow: hidden;
 }
 
+=======
+>>>>>>> 138d82cf4f94231e267cbb851e66a231474886c2
 #home img {
   width: 1200px;
   height: 600px;
@@ -289,6 +292,10 @@ button:hover {
 
 /* Center the image and position the close button */
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 138d82cf4f94231e267cbb851e66a231474886c2
 .container {
   padding: 5px;
 }
@@ -384,6 +391,11 @@ span.psw {
   .cancelbtn {
     width: 100%;
   }
+<<<<<<< HEAD
   #log {
     color: blue;
+=======
+  #log{
+    color:blue;
+>>>>>>> 138d82cf4f94231e267cbb851e66a231474886c2
   }

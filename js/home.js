@@ -22,7 +22,11 @@ $(document).ready(function(){
     alert("You are logged in as" +user);
     $("#id01").hide();
     // window.location.reload();
+<<<<<<< HEAD
     $("#login").hide();
+=======
+    $("#pagebutton").hide();
+>>>>>>> 138d82cf4f94231e267cbb851e66a231474886c2
     $("#log").append("<li>"+user+"</li>");
     console.log(user)
     });
