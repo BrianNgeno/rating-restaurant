@@ -14,10 +14,6 @@
      <img src="images5/logo.png" alt="logo image" id="logoimage">
      <h1>Please fill the form below to Help us rate our Restaurants</h1>
    </div>
-   <div class="rating">
-   <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
-   </div>
-
    <div id="myNav" class="overlay">
  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
  <div class="overlay-content">
@@ -36,8 +32,8 @@
    <div class="col-md-12">
        <form action="action_page.php">
          <div class="cc">
-                 <label for="Restaurants">Restaurants</label>
-                 <select id="Restaurants" name="Restaurants">
+                 <label id="resthead" for="Restaurants">Restaurants</label>
+                 <select id="welldo" name="Restaurants">
              <option value="select Restaurant">Select Restaurant</option>
 
              <option value="KFC">KFC</option>
@@ -65,6 +61,18 @@
            </select>
            <input type="submit" value="Submit">
 
+           <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
+
+   <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars-o.css" rel="stylesheet"/>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+   <script src="https://cdn.bootcss.com/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+   <select id="example">
+     <option value="1">1</option>
+     <option value="2">2</option>
+     <option value="3">3</option>
+     <option value="4">4</option>
+     <option value="5">5</option>
+   </select>
          </div>
        </div>
      </div>
