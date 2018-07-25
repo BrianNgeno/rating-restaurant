@@ -2,14 +2,16 @@
 <html lang="en">
 
 <head>
-	<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-	<link href="css/testimonials.css" rel="stylesheet" type="text/css">
+	<link href="css2/bootstrap.css" rel="stylesheet" type="text/css">
+	<link href="css2/testimonials.css" rel="stylesheet" type="text/css">
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="js2/testimonials.js"></script>
 	<title>Testimonials Carousel</title>
-	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Patrick+Hand" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
@@ -17,26 +19,52 @@
 </head>
 
 <body>
-	<div class="container">
-		<h1><img src="images/logo.png" id="logo"><br><br>TESTIMONIALS</h1>
+
+	<div id="myNav" class="overlay">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+		<div class="overlay-content">
+			<a href="home.html">HOME</a>
+			<a href="about.html">ABOUT</a>
+			<a href="rate.html">RATE</a>
+			<a href="contactus.html">CONTACT</a>
+			<a href="testimonials.html">TESTIMONIALS</a>
+		</div>
+	</div>
+
+	<span style="font-family: Black Ops One; font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+
+	<div class="container-fluid">
 
 		<div class="row">
+			<div class="col-md-5">
+			</div>
+			<div class="col-md-4">
+				<img src="images2/logo.png">
+			</div>
+		</div>
+		<div class="col-md-12">
+			<h1 id="head">TESTIMONIALS</h1>
+		</div>
+	</div>
+
+	<div id="main">
+		<div class="row" id="margin">
 			<div class="col-md-10 col-center m-auto">
 				<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
-					<!-- Carousel indicators -->
+
 					<ol class="carousel-indicators">
 						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
 						<li data-target="#myCarousel" data-slide-to="1"></li>
 						<li data-target="#myCarousel" data-slide-to="2"></li>
 					</ol>
-					<!-- Wrapper for carousel items -->
+
 					<div class="carousel-inner">
 						<div class="item carousel-item active">
 							<div class="row">
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/yemi.jpg" class="img-responsive img-fluid">
+											<img src="images2/yemi.jpg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>JAVA HOUSE</h4>
@@ -49,11 +77,11 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/tahj.jpg" class="img-responsive img-fluid">
+											<img src="images2/tahj.jpg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>GALITOS</h4>
-											<p>Galitos has the friendliest staff! They're very attentive and great at offering suggestions if you can't decide what to order.<br><em>Tahj Mowry</em></p><br>
+											<p>Galitos has the friendliest staff! They're very attentive and great at offering suggestions if you can't decide what to order.<br><em>Tahj Mowry</em></p>
 											<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
 										</div>
 									</div>
@@ -62,7 +90,7 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/zuri.jpeg" class="img-responsive img-fluid">
+											<img src="images2/zuri.jpeg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>ART CAFE</h4>
@@ -79,10 +107,10 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/chadwick.jpeg" class="img-responsive img-fluid">
+											<img src="images2/chadwick.jpeg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
-											<h4>SUBWAY</h4>
+											<h4>TAMARIND</h4>
 											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam eu sem tempor, varius quam.<br><em>Chadwick Boseman</em></p><br><br><br>
 											<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
 										</div>
@@ -92,7 +120,7 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/idris.jpeg" class="img-responsive img-fluid">
+											<img src="images2/idris.jpeg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>BIG SQUARE</h4>
@@ -105,7 +133,7 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/will.jpg" class="img-responsive img-fluid">
+											<img src="images2/will.jpg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>CARNIVORE</h4>
@@ -122,7 +150,7 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/zendaya.jpeg" class="img-responsive img-fluid">
+											<img src="images2/zendaya.jpeg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>PIZZA HUT</h4>
@@ -135,11 +163,11 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/pharell.jpeg" class="img-responsive img-fluid">
+											<img src="images2/pharell.jpeg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>SUBWAY</h4>
-											<p>So happy to have a Subway Restaurant in our neighbourhood! Great sandwiches, awesome service and good prices.<br><em>Pharell Williams</em></p>
+											<p>So happy to have a Subway Restaurant in our neighbourhood! Great sandwiches, awesome service and good prices.<br><em>Pharell Williams</em></p><br>
 											<a href="#" class="btn btn-primary">More <i class="fa fa-angle-right"></i></a>
 										</div>
 									</div>
@@ -148,7 +176,7 @@
 								<div class="col-sm-4">
 									<div class="thumb-wrapper">
 										<div class="img-box">
-											<img src="images/alicia.jpeg" class="img-responsive img-fluid">
+											<img src="images2/alicia.jpeg" class="img-responsive img-fluid" width="100%">
 										</div>
 										<div class="thumb-content">
 											<h4>DOMINO</h4>
@@ -171,6 +199,7 @@
 				</div>
 			</div>
 		</div>
+	</div>
 	</div>
 </body>
 
