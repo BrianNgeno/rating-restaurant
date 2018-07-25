@@ -1,10 +1,12 @@
 #background{
-    background-image: url(../images1/coffee-cup-drink-notebook-table-dp-1366x768.jpg);
+    background-image: url(../images1/logos/canon1.jpg);
     background-size: 1365px;
-    background-attachment: fixed
+    background-attachment: fixed;
+    
 }
 #logo{
     text-align: center;
+    color: #f1f1f1
     
 }
 #about{
@@ -13,7 +15,7 @@
     
 }
 #who{
-    color:darkred
+    color:whitesmoke
 }
 #second{
     position: relative;
@@ -26,7 +28,7 @@
     height: auto;
   }
   
-  .overlay {
+  .overlay1 {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -64,7 +66,7 @@
     height: auto;
   }
   
-  .overlay {
+  .overlay1{
     position: absolute;
     bottom: 0;
     left: 0;
@@ -76,7 +78,7 @@
     transition: .5s ease;
   }
   
-  .container:hover .overlay {
+  .container:hover .overlay1 {
     width: 100%;
   }
   
@@ -94,3 +96,116 @@
   .mySlides{
       display: none
   }
+  h2{
+    text-align: center;
+    font-family: 'Monoton', cursive;
+    color:rgb(206, 21, 21)
+  }
+  * {box-sizing: border-box}
+.mySlides2 {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+li{
+  font-family: 'Kavoon', cursive;
+  color:whitesmoke;
+  
+}
+p{
+  font-family: 'Kavoon', cursive;
+  color:whitesmoke;
+  size: 60px
+  
+}
+#about{
+  color: whitesmoke
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:whitesmoke;
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color:whitesmoke;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+.overlay a {font-size: 20px}
+.overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+}
+}
+a{
+  font-family: 'Black Ops One', cursive;
+}
