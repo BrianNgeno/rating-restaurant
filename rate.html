@@ -10,79 +10,65 @@
   <title>Rating Restaurant</title>
 </head>
 <body>
-
- <div id="first-heading">
-   <div class="container-fluid">
-     <img id="logoimage" src="images5/logo.png" alt="logo image" class="center">
-     <h1><i></i></h1>
+   <div class="container-fluid" id="first-heading">
+     <img src="images5/logo.png" alt="logo image" id="logoimage">
+     <h1>Please fill the form below to Help us rate our Restaurants</h1>
    </div>
+   <div class="rating">
+   <span>☆</span><span>☆</span><span>☆</span><span>☆</span><span>☆</span>
+   </div>
+
+   <div id="myNav" class="overlay">
+ <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+ <div class="overlay-content">
+   <a href="#">HOME</a>
+   <a href="#">ABOUT</a>
+   <a href="#">RATE</a>
+   <a href="#">CONTACT</a>
+   <a href="#">TESTIMONIALS</a>
+ </div>
 </div>
-<div id="background" class="container-fluid">
-    <p>about us</p>
 
 
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
 <div class="container-fluid">
-  <div class="container-fluid">
-   <div class="row">
-    <div class="col-md-12">
+ <div class="row" id="background">
+   <div class="col-md-12">
+       <form action="action_page.php">
+         <div class="cc">
+                 <label for="Restaurants">Restaurants</label>
+                 <select id="Restaurants" name="Restaurants">
+             <option value="select Restaurant">Select Restaurant</option>
 
-    <div class="container">
-  <form action="action_page.php">
+             <option value="KFC">KFC</option>
+             <option value="GALITOS">GALITOS</option>
+             <option value="BURGER KING">BURGER KING</option>
+             <option value="BIG SQUARE">BIG SQUARE</option>
+             <option value="DOMINO">DOMINO</option>
+             <option value="ART CAFE">ART CAFE</option>
+             <option value="URBAN BURGER">URBAN BURGER</option>
+             <option value="STEERS">STEERS</option>
+             <option value="SUBWAY">SUBWAY</option>
+             <option value="SANJEEL">SANJEEL</option>
+             <option value="SIAM">SIAM</option>
+             <option value="PIZZA HUT">PIZZA HUT</option>
+             <option value="THE IRISH WELL">THE IRISH WELL</option>
+             <option value="MAMMA MIA">MAMMA MIA</option>
+             <option value="ZAIKA LOUNGE">ZAIKA LOUNGE</option>
+             <option value="STARBUCKS">STARBUCKS</option>
+             <option value="WANNAH LOUNGE">WANNAH LOUNGE</option>
+             <option value="DEBONAIRS">DEBONAIRS</option>
+             <option value="MAMA OLIECH">MAMA OLIECH</option>
+             <option value="FOGO GAUCHO">FOGO GAUCHO</option>
+             <option value="KOSEWES">KOSEWES</option>
+             <option value="PIZZA MOJO">PIZZA MOJO</option>
+           </select>
+           <input type="submit" value="Submit">
 
-    <div class="cc">
-      <label for="Restaurants">Restaurants</label>
-      <select id="Restaurants" name="Restaurants">
-        <option value="select Restaurant">select Restaurant</option>
-        <option value="KFC">KFC</option>
-        <option value="GALITOS">GALITOS</option>
-
-        <option value="BURGER KING">BURGER KING</option>
-        <option value="BIG SQUARE">BIG SQUARE</option>
-        <option value="DOMINO">DOMINO</option>
-
-        <option value="ART CAFE">ART CAFE</option>
-        <option value="URBAN BURGER">URBAN BURGER</option>
-        <option value="STEERS">STEERS</option>
-
-        <option value="SUBWAY">SUBWAY</option>
-        <option value="SANJEEL">SANJEEL</option>
-        <option value="SIAM">SIAM</option>
-
-        <option value="PIZZA HUT">PIZZA HUT</option>
-        <option value="THE IRISH WELL">THE IRISH WELL</option>
-        <option value="MAMMA MIA">MAMMA MIA</option>
-
-        <option value="ZAIKA LOUNGE">ZAIKA LOUNGE</option>
-        <option value="STARBUCKS">STARBUCKS</option>
-        <option value="WANNAH LOUNGE">WANNAH LOUNGE</option>
-
-        <option value="DEBONAIRS">DEBONAIRS</option>
-        <option value="MAMA OLIECH">MAMA OLIECH</option>
-        <option value="FOGO GAUCHO">FOGO GAUCHO</option>
-
-        <option value="KOSEWES">KOSEWES</option>
-        <option value="PIZZA MOJO">PIZZA MOJO</option>
-
-      </select>
-
-
-
-      <input type="submit" value="Submit">
-
-    </div>
-
-
-
-
-  </form>
+         </div>
+       </div>
+     </div>
 </div>
-</div>
-</div>
-</div>
-
-</div>
-
-
 </body>
 
 </html>
