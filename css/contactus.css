@@ -112,18 +112,16 @@
 }
 #title {
   text-align: center;
-  background-color: lightblue;
+  /* background-color: lightblue; */
   color: #5a5600;
   height: 50px;
   margin: 0px;
   margin-bottom: -20px;
+  font-family: 'Righteous', cursive;
 }
 #filledForm {
   color: #5a5600;
 }
-/* #myNav {
-  background-color: lightblue;
-  color: #5a5600; */
 
 ody {
    font-family: 'Lato', sans-serif;
@@ -177,4 +175,3 @@ ody {
    top: 15px;
    right: 35px;
  }
-}
