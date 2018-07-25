@@ -3,9 +3,18 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+#head {
   font-family: Black Ops One;
   text-align: center;
+}
+
+#main {
+  background-image: url("../images2/bg.jpg");
+
+}
+
+#margin {
+  margin-left: 170px;
 }
 
 .col-center {
