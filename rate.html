@@ -6,37 +6,58 @@
   <link href="css/rate.css" rel="stylesheet" type="text/css">
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/rate.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Black+Ops+One" rel="stylesheet">
+  <link rel="shortcut icon" type="image/png" href="images1/logo.png">
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars-o.css" rel="stylesheet" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://cdn.bootcss.com/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates" rel="stylesheet">
   <title>Rating Restaurant</title>
 </head>
+
 <body>
+
+
   <div id="myNav" class="overlay">
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   <div class="overlay-content">
-     <a href="#">HOME</a>
-     <a href="#">ABOUT</a>
-     <a href="#">RATE</a>
-     <a href="#">CONTACT</a>
-     <a href="#">TESTIMONIALS</a>
-   </div>
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <div class="overlay-content">
+      <a href="home.html">HOME</a>
+      <a href="about.html">ABOUT</a>
+      <a href="rate.html">RATE</a>
+      <a href="contactus.html">CONTACT</a>
+      <a href="testimonials.html">TESTIMONIALS</a>
+    </div>
   </div>
 
 
-  <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; MENU</span>
+  <span style="font-size:30px;cursor:pointer" onclick="openNav()" id="menu">&#9776;MENU</span>
 
 
-   <div class="container-fluid" id="first-heading">
-     <img src="images5/logo.png" alt="logo image" id="logoimage">
-     <h1>Please fill the form below to Help us rate our Restaurants</h1>
-   </div>
+  <div class="container-fluid" id="first-heading">
+    <img src="images5/logo.png" alt="logo image" id="logoimage">
+    <h1 id="pot">Please fill the form below to Help us rate our Restaurants</h1>
+    <ul>
+      <li>Begin by selecting the restaurant you wish to rate and then fill in the form below</li>
+      <li>The radio button are arranged in order of their values</li>
+      <li>After you are done with the form submit and you will be able to view restaurants rated</li>
+      <li>If you wish to just view the available options you can select on the rated you can just clip on proceed to Rated button</li>
+    </ul>
 
-<div class="container-fluid">
- <div class="row" id="background">
-   <div class="col-md-12">
-       <form action="action_page.php">
-         <div class="cc">
-                 <label id="resthead" for="Restaurants">Restaurants</label>
-                 <select id="welldo" name="Restaurants">
+  </div>
+
+  <div class="container-fluid" id="form">
+    <div class="row" id="background">
+      <div class="col-md-12">
+        <form action="action_page.php">
+          <div class="cc">
+            <label id="resthead" for="Restaurants">Restaurants</label>
+            <select id="welldo" name="Restaurants">
              <option value="select Restaurant">Select Restaurant</option>
 
              <option value="KFC">KFC</option>
@@ -62,30 +83,605 @@
              <option value="KOSEWES">KOSEWES</option>
              <option value="PIZZA MOJO">PIZZA MOJO</option>
            </select>
-
-           <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet"/>
-
-   <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery-bar-rating/1.2.2/themes/fontawesome-stars-o.css" rel="stylesheet"/>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-   <script src="https://cdn.bootcss.com/jquery-bar-rating/1.2.2/jquery.barrating.min.js"></script>
-   <select id="example">
-     <option value="1">1</option>
-     <option value="2">2</option>
-     <option value="3">3</option>
-     <option value="4">4</option>
-     <option value="5">5</option>
-   </select>
-         </div>
-       </div>
-       <div id="comments" class="forms">
-         <form action="/action_page.php">
-            <textarea id="comment" name="subject" placeholder="Reason for the rating above..." style="height:200px"></textarea>
-
-            <br>  <input type="submit" value="Submit"></br>
-
-         </form>
+        </form>
+        </div>
       </div>
-     </div>
+
+      <div class="col-md-12">
+        <form id="questions">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-6">
+                Customer Service.
+              </div>
+
+              <div class="col-md-6">
+                <input type="radio" name="rate1" id="terrible" checked="checked" value="terrible">Terrible
+                <input type="radio" name="rate1" id="poor" value="poor">Poor
+                <input type="radio" name="rate1" id="average" value="average">Average
+                <input type="radio" name="rate1" id="very good" value="very good">Very Good
+                <input type="radio" name="rate1" id="excellent" value="excellent">Excellent
+
+              </div>
+            </div>
+
+
+            <br>
+            <div class="row">
+              </br>
+              <div class="col-md-6">
+                Food Quality.
+              </div>
+
+              <div class="col-md-6">
+                <input type="radio" name="rate2" id="terrible" checked="checked" value="terrible">Terrible
+                <input type="radio" name="rate2" id="poor" value="poor">Poor
+                <input type="radio" name="rate2" id="average" value="average">Average
+                <input type="radio" name="rate2" id="very good" value="very good">Very Good
+                <input type="radio" name="rate2" id="excellent" value="excellent">Excellent
+
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              </br>
+              <div class="col-md-6">
+                Comfort.
+              </div>
+
+              <div class="col-md-6">
+                <input type="radio" name="rate3" id="terrible" checked="checked" value="terrible">Terrible
+                <input type="radio" name="rate3" id="poor" value="poor">Poor
+                <input type="radio" name="rate3" id="average" value="average">Average
+                <input type="radio" name="rate3" id="very good" value="very good">Very Good
+                <input type="radio" name="rate3" id="excellent" value="excellent">Excellent
+
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              </br>
+              <div class="col-md-6">
+                Pricing/ Affordability.
+              </div>
+
+              <div class="col-md-6">
+                <input type="radio" name="rate4" id="terrible" checked="checked" value="terrible">Terrible
+                <input type="radio" name="rate4" id="poor" value="poor">Poor
+                <input type="radio" name="rate4" id="average" value="average">Average
+                <input type="radio" name="rate4" id="very good" value="very good">Very Good
+                <input type="radio" name="rate4" id="excellent" value="excellent">Excellent
+
+              </div>
+            </div>
+
+            <br>
+            <div class="row">
+              </br>
+              <div class="col-md-6">
+                Accesibility.
+              </div>
+
+              <div class="col-md-6">
+                <input type="radio" name="rate5" id="terrible" checked="checked" value="terrible">Terrible
+                <input type="radio" name="rate5" id="poor" value="poor">Poor
+                <input type="radio" name="rate5" id="average" value="average">Average
+                <input type="radio" name="rate5" id="very good" value="very good">Very Good
+                <input type="radio" name="rate5" id="excellent" value="excellent">Excellent
+
+              </div>
+            </div>
+
+            <button class="btn btn-success" type="submit" id="submit">SUBMIT</button>
+        </form>
+        </div>
+      </div>
+
+      <button class="btn btn-primary" type="button" id="proceed">PROCEED TO RATING</button>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="rest">
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>K.F.C</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+        <p id="kfc"></p>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>STEERS</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>GALITOS</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>CARNIVORE</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>BURGER KING</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>ART CAFE</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>PIZZA HUT</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>SUBWAY</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+    </div>
+
+
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>BIG SQUARE</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>DOMINO</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>URBAN BURGER</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>TAMARIND</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>DEBONAIRS</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>PIZZA MOJO</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>FOGO GAUCHO</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>JAVA HOUSE</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>STARBUCKS</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>MAMA OLIECH</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>FOR YOU CHINESE</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+        <div class="hovereffect">
+          <img class="img-responsive" src="images3/pexels.jpeg" alt="">
+          <div class="overlay">
+            <h2>THE SPUR</h2>
+            <p>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-dribbble"></i></a>
+            </p>
+          </div>
+        </div>
+        <button class="btn btn-success" type="button" name="button"><i class="glyphicon glyphicon-thumbs-up"></i>3324 </button> <button class="btn btn-danger" type="button" name="button"><i class="glyphicon glyphicon-thumbs-down"></i> 90</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="maps">
+  <div class="row">
+
+    <div class="col-md-3" id="carnovire">
+      <address>
+        Address: Lang'ata Road<br>
+        Open: 6:00pm - 10:00pm<br>
+        Tel.: 0722 222 222<br>
+        Email: <a href="info@carnovire.co.ke">email us</a><br>
+        Website: <a href="www.carnovire.co.ke">www.carnovire.co.ke</a><br>
+    </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1014fed387d9%3A0x2acb161c6235e675!2sCarnivore+Kenya!5e1!3m2!1sen!2ske!4v1532603913923"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="tamarind">
+      <address>
+                Address: Lang'ata Road<br>
+                Open: 6:00pm - 10:00pm<br>
+                Tel.: 0722 222 222<br>
+                Email: <a href="info@tamarind.co.ke">info@tamarind.co.ke</a><br>
+                Website: <a href="www.tamarind.co.ke">www.tamarind.co.ke</a><br>
+            </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f04b748a3042f%3A0xb3d9a5d29636117c!2sTamarind+Nairobi!5e1!3m2!1sen!2ske!4v1532603973132"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="dominos">
+      <address>
+                Address: Ngong Road<br>
+                Open: 8:30am - 10:00pm<br>
+                Tel.: 0722 111 111<br>
+                Email: <a href="info@dominos.co.ke">www.dominos.co.ke</a><br>
+                Website: <a href="www.dominos.co.ke">www.dominos.co.ke</a><br>
+            </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a718690799b%3A0xba0cf95074f794c4!2sDomino&#39;s+Pizza+-+Ngong+Road!5e1!3m2!1sen!2ske!4v1532603785371"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="steers">
+      <address>
+                Address: Ngong Rd.<br>
+                Open: 6:30am till midnight<br>
+                Tel.: 0722 111 222<br>
+                Email: <a href="info@steers.co.ke">info@steers.co.ke</a><br>
+                Website: <a href="www.steers.co.ke">www.steers.co.ke</a><br>
+            </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109a2eae6bb1%3A0x31fe593f02ca3158!2sSteers+Kenya+-+Ngong+Road!5e1!3m2!1sen!2ske!4v1532603697898"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3" id="urbanburger">
+      <address>
+                        Address: Prestige Plaza, Ngong Rd.<br>
+                        Open: 10:00am - 10:00pm<br>
+                        Tel.: 0722 111 222<br>
+                        Email: <a href="info@urbanburger.co.ke">info@urbanburger.co.ke</a><br>
+                        Website: <a href="www.urbanburger.co.ke">www.urbanburger.co.ke</a><br>
+                    </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109c059a7df7%3A0xcf4d6596d3dc9691!2sUrban+Burger!5e1!3m2!1sen!2ske!4v1532603608267"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="galitos">
+      <address>
+                Address: Ngong Rd.<br>
+                Open: 10:00am - 10:00pm<br>
+                Tel.: 0722 444 222<br>
+                Email: <a href="info@galitos.co.ke">info@galitos.co.ke</a><br>
+                Website: <a href="www.galitos.co.ke">www.galitos.co.ke</a><br>
+            </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f109a2dac30cd%3A0x70756d226bd53eb3!2sGalitos-Ngong+Road!5e1!3m2!1sen!2ske!4v1532599140706"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="pizzahut">
+      <address>
+                Address: Yaya Center<br>
+                Open: 12 noon - 10:00pm<br>
+                Tel.: 0722 777 222<br>
+                Email: <a href="info@pizzahut.co.ke">info@pizzahut.co.ke</a><br>
+                Website: <a href="www.pizzahut.co.ke">www.pizzahut.co.ke</a><br>
+            </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a3e13be545%3A0x611df34fab25a4a!2sPizza+Hut+Yaya+Center!5e1!3m2!1sen!2ske!4v1532604965444"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="fogogaucho">
+      <address>
+                Address: Galana Plaza, Kilimani<br>
+                Open: 6:00pm - midnight<br>
+                Tel.: 0722 777 222<br>
+                Email: <a href="info@fogogaucho.co.ke">info@fogogaucho.co.ke</a><br>
+                Website: <a href="www.fogogaucho.co.ke">www.fogogaucho.co.ke</a><br>
+            </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d-2735.8081701893598!2d36.78977093556724!3d-1.3000480099379048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a76981bf7d%3A0x11bf122e8abc7eed!2sFogo+Gaucho!5e1!3m2!1sen!2ske!4v1532605023183"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-3" id="javahouse">
+      <address>
+            Address: The Junction<br>
+            Open: 8:00am - midnight<br>
+            Tel.: 0722 888 222<br>
+            Email: <a href="info@javahouse.co.ke">info@javahouse.co.ke</a><br>
+            Website: <a href="www.javahouse.co.ke">www.javahouse.co.ke</a><br>
+        </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7941501043124!2d36.75995881420107!3d-1.2982443360041511!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6a58b79b19%3A0x58a4c3cd31709a0f!2sJava+House+-+Junction+Mall!5e0!3m2!1sen!2ske!4v1532608822401"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="kfc">
+      <address>
+        Address: The Junction<br>
+        Open: 8:00am - 10:00pm<br>
+        Tel.: 0722 888 111<br>
+        Email: <a href="info@kfc.co.ke">info@kfc.co.ke</a><br>
+        Website: <a href="www.kfc.co.ke">www.kfc.co.ke</a><br>
+    </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.793674211767!2d36.75954341420105!3d-1.298545936004565!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1a6a6809bc0d%3A0x41ea5dc254c94088!2sKFC+Junction!5e0!3m2!1sen!2ske!4v1532609005468"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="bigsquare">
+      <address>
+        Address: AdLife Plaza<br>
+        Open: 8:00am - 11:00pm<br>
+        Tel.: 0722 888 111<br>
+        Email: <a href="info@bigsquare.co.ke">info@bigsquare.co.ke</a><br>
+        Website: <a href="www.bigsquare.co.ke">www.bigsquare.co.ke</a><br>
+    </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.802214566995!2d36.78482541420107!3d-1.2931227359970463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f10a202c100e5%3A0xae2817dcb241acf5!2sBig+Square+AdLife+Plaza!5e0!3m2!1sen!2ske!4v1532609154600"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-3" id="subway">
+      <address>
+        Address: The Hub, Karen<br>
+        Open: 8:00am - 11:00pm<br>
+        Tel.: 0722 888 111<br>
+        Email: <a href="info@subway.co.ke">info@subway.co.ke</a><br>
+        Website: <a href="www.subway.co.ke">www.subway.co.ke</a><br>
+        </address>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.7584519296092!2d36.70169091420128!3d-1.3206771360358032!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1b652a689135%3A0xd58744f5bef39c0f!2sSubway+The+Hub+Karen!5e0!3m2!1sen!2ske!4v1532609302132"
+        width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+  </div>
 </div>
 </body>
 
