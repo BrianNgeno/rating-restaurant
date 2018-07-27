@@ -272,10 +272,10 @@ ul {
 
 #rest {
   font-family: 'Cabin Sketch', cursive;
-  /* display:none; */
+  display:none;
 }
 #maps{
-  /* display:none; */
+  display:none;
 }
 #questions {
   background-color: #ffe6cc;

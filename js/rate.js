@@ -142,20 +142,29 @@ $(document).ready(function() {
       console.log(score5)
     }
   });
-});
+
 $("#questions").submit(function(event) {
   event.preventDefault();
   $("#rest").show();
   $("#form").hide();
-  Rate.total(score1, score2, score3, score4, score5);
-  Rate.average();
-  console.log(Rate.average());
+  var rated = new Rate;
+  // rated.total(score1, score2, score3, score4, score5);
+  console.log(rated.total(score1, score2, score3, score4, score5));
+  // Rate.average();
+  console.log(rated.average());
+  $("#kfcr").text(rated.average());
 });
 $("#proceed").click(function(event){
   event.preventDefault();
   $("#rest").show();
-})
+  $("#1").click(function(event){
+    event.preventDefault();
+    $("#rest").hide();
+    $("#kfc").show();
 
+  })
+});
+});
 
 //business logic
 function Rate() {
@@ -164,7 +173,9 @@ function Rate() {
 }
 Rate.prototype.total = function(sc1, sc2, sc3, sc4, sc5) {
   this.totalScore = sc1 + sc2 + sc3 + sc4 + sc5;
+  return this.totalScore;
 }
 Rate.prototype.average = function() {
   this.averageScore = (this.totalScore / 25) * 100;
+  return this.averageScore;
 }
