@@ -277,6 +277,9 @@ ul {
 #maps{
   display:none;
 }
+#kfc{
+  display:none;
+}
 #questions {
   background-color: #ffe6cc;
   font-family: 'Cabin Sketch', cursive;

@@ -156,14 +156,16 @@ $("#questions").submit(function(event) {
 });
 $("#proceed").click(function(event){
   event.preventDefault();
+  $("#form").hide();
   $("#rest").show();
+  });
+
   $("#1").click(function(event){
     event.preventDefault();
     $("#rest").hide();
     $("#kfc").show();
+  });
 
-  })
-});
 });
 
 //business logic
